@@ -5,11 +5,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Gujarati Trader — BankNifty • Nifty • Options Trading</title>
 
-  <!-- Google Fonts + Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-
-  <!-- NEW META PIXEL INSTALLED CORRECTLY -->
   <!-- Meta Pixel Code -->
   <script>
   !function(f,b,e,v,n,t,s)
@@ -23,11 +18,14 @@
   fbq('init', '1610585403443731');
   fbq('track', 'PageView');
   </script>
-  <noscript>
-    <img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1610585403443731&ev=PageView&noscript=1"/>
-  </noscript>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1610585403443731&ev=PageView&noscript=1"
+  /></noscript>
   <!-- End Meta Pixel Code -->
+
+  <!-- Google Fonts + Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
   <style>
     :root{
@@ -47,7 +45,6 @@
       padding:30px 16px;
     }
 
-    /* NEON LOGO FRAME */
     .logo-block{
       position:relative;
       display:inline-block;
@@ -86,7 +83,6 @@
     h1{font-size:30px;margin:14px 0 0;}
     h2{font-size:16px;margin:6px 0 18px;color:var(--accent);}
 
-    /* NEON BUTTONS */
     .join-btn{
       position:relative;
       display:inline-flex;
@@ -122,7 +118,6 @@
       transition:.24s ease;
     }
 
-    /* Candles */
     .candles{
       display:flex;
       justify-content:center;
@@ -143,7 +138,6 @@
     .candle:nth-child(4){animation-delay:.54s}
     @keyframes grow{0%{transform:scaleY(.55);}100%{transform:scaleY(1.08);} }
 
-    /* Details card */
     .details{
       margin:22px auto;
       padding:22px;
@@ -178,7 +172,6 @@
       color:var(--muted);
     }
 
-    /* PROFIT TICKER */
     .profit-box{
       margin:18px auto;
       padding:12px 18px;
@@ -197,7 +190,6 @@
       to{opacity:1; transform:translateY(0);}
     }
 
-    /* FLOATING TELEGRAM */
     .float-tg{
       position:fixed;
       right:18px;
@@ -227,7 +219,6 @@
 
 <body>
 
-  <!-- Neon Logo -->
   <div class="logo-block">
     <img src="https://uploads.onecompiler.io/445e5df86/445tc7ue3/330.png" alt="Gujarati Trader Logo">
   </div>
@@ -235,15 +226,12 @@
     <h1>GUJARATI TRADER</h1>
     <h2>BankNifty • Nifty • Options Trading</h2>
 
-  <!-- PROFIT TICKER -->
   <div id="profitBox" class="profit-box">Loading latest profits…</div>
 
-  <!-- MAIN TELEGRAM BUTTON -->
   <a class="join-btn" href="https://t.me/+Ctfg31EQ8CU0MDFl" target="_blank">
     <i class="fa-brands fa-telegram"></i> Join Telegram <i class="fa-brands fa-telegram"></i>
   </a>
 
-  <!-- Candles -->
   <div class="candles">
     <div class="candle green"></div>
     <div class="candle red"></div>
@@ -251,7 +239,6 @@
     <div class="candle red"></div>
   </div>
 
-  <!-- DETAILS -->
   <div class="details">
     <p>• Daily BankNifty & Nifty option buying & selling setups.</p>
     <p>• Accurate Entry → Stop Loss → Target levels.</p>
@@ -266,25 +253,26 @@
     <div class="meta">Educational purpose only. Trading involves risk.</div>
   </div>
 
-  <!-- FLOATING TELEGRAM BUTTON -->
   <a class="float-tg" href="https://t.me/+s0qU8EasVERhOTc9" target="_blank">
     <i class="fa-brands fa-telegram"></i>
   </a>
 
-  <!-- PROFIT TICKER SCRIPT -->
   <script>
     const names = [
       "🎊Ravi Patel🤩", "🎊Amit Sharma🤩", "🎊Neha Verma🤩", "🎊Karan Singh🤩",
       "🎊Rahul Joshi", "🎊Sneha Iyer🤩", "🎊Harshil Thakor🤩", "🎊Manoj Suthar🤩",
-      "🎊Suresh Gupta🤩", "🎊Jaydeep Rana🤩", "🎊Dinesh Patel🤩","🎊kavita Choudhary🤩", "🎊Abhishek Patel🤩","🎊Vinita Verma 🤩","🎊Devash Nagar🤩","🎊Narender singh🤩"
+      "🎊Suresh Gupta🤩", "🎊Jaydeep Rana🤩", "🎊Dinesh Patel🤩","🎊kavita Choudhary🤩",
+      "🎊Abhishek Patel🤩","🎊Vinita Verma 🤩","🎊Devash Nagar🤩","🎊Narender singh🤩"
     ];
 
-    const profits = ["✅₹40,000", "✅₹52,500", "✅₹61,200", "✅₹47,800", "✅₹55,900", "✅₹49,300", "✅₹68,400", "✅₹72,800","✅₹150000","✅₹48900","✅₹78600","✅₹96300"];
+    const profits = ["✅₹40,000", "✅₹52,500", "✅₹61,200", "✅₹47,800", "✅₹55,900",
+                     "✅₹49,300", "₹68,400", "✅₹72,800","✅₹150,000","✅₹48,900",
+                     "✅₹78,600","✅₹96,300"];
 
     function randomMsg() {
       const name = names[Math.floor(Math.random() * names.length)];
       const profit = profits[Math.floor(Math.random() * profits.length)];
-      return `${name} booked profit of <b>${profit}</b> today ✔`;
+      return `${name} booked profit of <b>₹${profit}</b> today ✔`;
     }
 
     function updateTicker() {
@@ -301,16 +289,3 @@
 
 </body>
 </html>
-<html>
-  <head>
-    <title>Hello, World!</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-      <h1 class="title">Hello World! </h1>
-      <p id="currentTime"></p>
-      <script src="script.js"></script>
-  </body>
-
-</html>
-
